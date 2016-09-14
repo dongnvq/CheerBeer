@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ri-Lx-NOa">
+                                <rect key="frame" x="63" y="278" width="193.5" height="22"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Let Drink Beer Together">
+                                        <attributes>
+                                            <color key="NSColor" red="0.93725490199999995" green="0.30980392159999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="MarkerFelt-Thin"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="UkZ-gJ-k4C">
+                                <rect key="frame" x="66" y="120" width="188" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.93725490196078431" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UkZ-gJ-k4C" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="50" id="9v9-fV-BIY"/>
+                            <constraint firstItem="UkZ-gJ-k4C" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="LAG-4x-2ZB"/>
+                            <constraint firstItem="9ri-Lx-NOa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NxS-oe-5mm"/>
+                            <constraint firstItem="9ri-Lx-NOa" firstAttribute="top" secondItem="UkZ-gJ-k4C" secondAttribute="bottom" constant="30" id="QVI-1q-sK1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UkZ-gJ-k4C" secondAttribute="trailing" constant="50" id="kfI-t3-hi2"/>
+                            <constraint firstItem="9ri-Lx-NOa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vXP-Wl-CEK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vXP-Wl-CEK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beer" width="128" height="128"/>
+    </resources>
+</document>
